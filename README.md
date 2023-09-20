@@ -3,7 +3,7 @@
 A collection of coding projects that I have created.
 
 
-## Bayes-Buhl_Straub_Estimation & Bayesian Empirical Estimation:
+### Bayes-Buhl_Straub_Estimation & Bayesian Empirical Estimation:
 
 <p>During my college course dedicated to the Short Term Actuarial Mathematics(STAM), 
 we learned about predicting the next claim from multiple given distribution of previous 
