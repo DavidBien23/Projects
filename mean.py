@@ -1,7 +1,7 @@
 import numpy as np
 data=input("Input data to be averaged seperated by spaces: ").split()
 data=[int(x) for x in data]
-step=.01
+step=float(input("Input desired accuracy: "))
 result=[]
 for i in np.arange(min(data)+step, max(data), step):
     temp=0
