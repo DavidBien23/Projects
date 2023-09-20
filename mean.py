@@ -1,5 +1,6 @@
 import numpy as np
-data=[15,156,2042]
+data=input("Input data to be averaged seperated by spaces: ").split()
+data=[int(x) for x in data]
 step=.01
 result=[]
 for i in np.arange(min(data)+step, max(data), step):
