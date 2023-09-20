@@ -19,3 +19,11 @@ project took only a week while the LTAM took about a month and is still in proge
 the Fall of 2023 as I take the second portion of the class. My goal was to make the calculator 
 user friendly so I used the pythons built-in tkinter module for the first time. I also created 
 an executable file for the calculator with the same goal in mind.</p>
+
+### Mean
+
+<p>This is a small file that I worked on outside of school determined to find a unique way to 
+average a list of numbers. My method chooses many values between the minimum and maximum of
+the dataset then subtracts the data that are smaller than the chosen number and adds the data 
+that are larger. After creating a list of sums, I find the smallest absolute value of difference
+between the data and chosen point as the average. The user can input data and accuracy.</p>
