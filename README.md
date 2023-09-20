@@ -1,6 +1,7 @@
 # Projects
 
-A collection of coding projects that I have created.
+<p>A collection of coding projects that I have created to make classwork easier, learn modules or 
+functions, or practice the techniques I already know.</p>
 
 
 ### Bayes-Buhl_Straub_Estimation & Bayesian Empirical Estimation:
