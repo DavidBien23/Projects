@@ -28,3 +28,11 @@ average a list of numbers. My method chooses many values between the minimum and
 the dataset then subtracts the data that are smaller than the chosen number and adds the data 
 that are larger. After creating a list of sums, I find the smallest absolute value of difference
 between the data and chosen point as the average. The user can input data and accuracy.</p>
+
+### Teamwork 1
+
+<p>This was a class teamwork assignment in preperation for the Statistical and Risk
+Modelling (SRM) actuary exam where we choose the most important variables for a linear model. 
+We were given data from Boston crime statistics from the Intro to Stat Learning (ISLR2) 
+library. We used forward selection and a transformation of the dependent variable to grow
+our model to just 4 of the 13 variables.</p>
