@@ -36,4 +36,4 @@ Modelling (SRM) actuary exam where we analyze and choose the best variables for 
 model. The first half of the assignment was just manipulating parts of a linear model but 
 second was to create our own linear model. We were given data from Boston crime statistics 
 from the Intro to Stat Learning (ISLR2) library. We used forward selection and a transformation 
-of the dependent variable to grow our model to just 4 of the 13 variables.</p>
+of the dependent variable to grow our model to just 4 of the 12 variables.</p>
