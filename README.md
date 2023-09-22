@@ -32,7 +32,8 @@ between the data and chosen point as the average. The user can input data and ac
 ### Teamwork 1
 
 <p>This was a class teamwork assignment in preperation for the Statistical and Risk
-Modelling (SRM) actuary exam where we choose the most important variables for a linear model. 
-We were given data from Boston crime statistics from the Intro to Stat Learning (ISLR2) 
-library. We used forward selection and a transformation of the dependent variable to grow
-our model to just 4 of the 13 variables.</p>
+Modelling (SRM) actuary exam where we analyze and choose the best variables for a linear 
+model. The first half of the assignment was just manipulating parts of a linear model but 
+second was to create our own linear model. We were given data from Boston crime statistics 
+from the Intro to Stat Learning (ISLR2) library. We used forward selection and a transformation 
+of the dependent variable to grow our model to just 4 of the 13 variables.</p>
