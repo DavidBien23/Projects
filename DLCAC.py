@@ -22,7 +22,7 @@ class App(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title("Dave's Life Contingent Actuarial Calculator")
-        self.width = 900 # width for the Tk root
+        self.width = 1200 # width for the Tk root
         self.height = 600 # height for the Tk root
         # get screen width and height
         self.screen_width = self.winfo_screenwidth() # width of the screen
@@ -107,16 +107,26 @@ class App(tk.Tk):
 
         tk.Label(self, text = "tpy = ").place(x = out_x3-s, y = (out_y+24*0))
         tk.Label(self, text = "tqy = ").place(x = out_x3-s, y = (out_y+24*1))
-        tk.Label(self, text = "u|tqx = ").place(x = out_x3-s, y = (out_y+24*2))
-        tk.Label(self, text = "ex = ").place(x = out_x3-s, y = (out_y+24*3))
-        tk.Label(self, text = "ex:n = ").place(x = out_x3-s, y = (out_y+24*4))
-        tk.Label(self, text = "Ax = ").place(x = out_x3-s, y = (out_y+24*5))
-        tk.Label(self, text = "Ax:n = ").place(x = out_x3-s, y = (out_y+24*6))
-        tk.Label(self, text = "nEx = ").place(x = out_x3-s, y = (out_y+24*7))
-        tk.Label(self, text = "ax = ").place(x = out_x3-s, y = (out_y+24*8))
-        tk.Label(self, text = "ax:n = ").place(x = out_x3-s, y = (out_y+24*9))
+        tk.Label(self, text = "u|tqy = ").place(x = out_x3-s, y = (out_y+24*2))
+        tk.Label(self, text = "ey = ").place(x = out_x3-s, y = (out_y+24*3))
+        tk.Label(self, text = "ey:n = ").place(x = out_x3-s, y = (out_y+24*4))
+        tk.Label(self, text = "Ay = ").place(x = out_x3-s, y = (out_y+24*5))
+        tk.Label(self, text = "Ay:n = ").place(x = out_x3-s, y = (out_y+24*6))
+        tk.Label(self, text = "nEy = ").place(x = out_x3-s, y = (out_y+24*7))
+        tk.Label(self, text = "ay = ").place(x = out_x3-s, y = (out_y+24*8))
+        tk.Label(self, text = "ay:n = ").place(x = out_x3-s, y = (out_y+24*9))
 
         tk.Label(self, text = "tpxy = ").place(x = out_x4-s, y = (out_y+24*0))
+        tk.Label(self, text = "tqxy = ").place(x = out_x4-s, y = (out_y+24*1))
+        tk.Label(self, text = "u|tqxy = ").place(x = out_x4-s, y = (out_y+24*2))
+        tk.Label(self, text = "exy = ").place(x = out_x4-s, y = (out_y+24*3))
+        tk.Label(self, text = "exy:n = ").place(x = out_x4-s, y = (out_y+24*4))
+        tk.Label(self, text = "Axy = ").place(x = out_x4-s, y = (out_y+24*5))
+        tk.Label(self, text = "Axy:n = ").place(x = out_x4-s, y = (out_y+24*6))
+        tk.Label(self, text = "nExy = ").place(x = out_x4-s, y = (out_y+24*7))
+        tk.Label(self, text = "axy = ").place(x = out_x4-s, y = (out_y+24*8))
+        tk.Label(self, text = "axy:n = ").place(x = out_x4-s, y = (out_y+24*9))
+        tk.Label(self, text = "tpxybar = ").place(x = out_x4-s, y = (out_y+24*10))
         
         
 
@@ -148,7 +158,7 @@ class App(tk.Tk):
         self.output_ax = tk.Label(self); self.output_ax.place(x = out_x2, y = out_y+24*6)
         self.output_axn = tk.Label(self); self.output_axn.place(x = out_x2, y = out_y+24*7)
         self.output_uax = tk.Label(self); self.output_uax.place(x = out_x2, y = out_y+24*8)
-        self.output_uaxn = tk.Label(self); self.output_uaxn.place(x = out_x2, y = out_y+24*9)
+        self.output_uaxn = tk.Label(self); self.output_uaxn.place(x = out_x2+5, y = out_y+24*9)
         # self.output_Vax = tk.Label(self); self.output_Vax.place(x = out_x2, y = out_y+24*10)
         # self.output_Vaxn = tk.Label(self); self.output_Vaxn.place(x = out_x2, y = out_y+24*11)
         
@@ -163,6 +173,17 @@ class App(tk.Tk):
         self.output_ay = tk.Label(self); self.output_ay.place(x = out_x3, y = out_y+24*8)
         self.output_ayn = tk.Label(self); self.output_ayn.place(x = out_x3, y = out_y+24*9)
 
+        self.output_tpxy = tk.Label(self); self.output_tpxy.place(x = out_x4, y = out_y+24*0)
+        self.output_tqxy = tk.Label(self); self.output_tqxy.place(x = out_x4, y = out_y+24*1)
+        self.output_utqxy = tk.Label(self); self.output_utqxy.place(x = out_x4, y = out_y+24*2)
+        self.output_exy = tk.Label(self); self.output_exy.place(x = out_x4, y = out_y+24*3)
+        self.output_exyn = tk.Label(self); self.output_exyn.place(x = out_x4, y = out_y+24*4)
+        self.output_Axy = tk.Label(self); self.output_Axy.place(x = out_x4, y = out_y+24*5)
+        self.output_Axyn = tk.Label(self); self.output_Axyn.place(x = out_x4, y = out_y+24*6)
+        self.output_nExy = tk.Label(self); self.output_nExy.place(x = out_x4, y = out_y+24*7)
+        self.output_axy = tk.Label(self); self.output_axy.place(x = out_x4, y = out_y+24*8)
+        self.output_axyn = tk.Label(self); self.output_axyn.place(x = out_x4, y = out_y+24*9)
+        self.output_tpxybar = tk.Label(self); self.output_tpxybar.place(x = out_x4+15, y = out_y+24*10)
 
 
         # Input Labels
@@ -401,6 +422,7 @@ class App(tk.Tk):
         # self.Vax = (self._2Ax - pow(self.Ax , 2)) / pow((i*v), 2)
         # self.output_Vax.config(text = round(self.Vax, r))
 
+
         ##COLUMN 3##
         # Equation for tpy
         self.tpy = ( ( self.ly(y+t) / (self.ly(y)) )\
@@ -461,6 +483,39 @@ class App(tk.Tk):
             self.ayn += pow(v,k) * ( ( self.ly(y+k) / self.ly(y) )
                     if 17 < t + y + u and t + y + u < 130 else "")
         self.output_ayn.config(text = round(self.ayn, r))  
+
+
+        ## COLUMN 4 ##
+        # Equation for tpxy
+        self.output_tpxy.config(text = round((self.tpx * self.tpy), r))
+
+        # Equation for tqxy
+        self.output_tqxy.config(text = round((1 - self.tpx * self.tpy), r))
+
+        # Equation for u|tqxy
+        self.utqx = ( ( (self.l(x+u) - self.l(x+u+t)) / self.l(x) )
+                    if 17 < t + x + u and t + x + u < 130 else "")
+        self.output_utqx.config(text = round(self.utqx, r))
+
+        # Equation for tpxybar
+        self.output_tpxybar.config(text = round((self.tpx + self.tpy - (self.tpx * self.tpy)), r))
+        
+        # Equation for axy
+        self.axy = 0
+        for k in range(0, 130-max(x, y)):
+            self.axy += pow(v,k) * ( ( ( self.l(x+k) / self.l(x) ) * ( self.ly(y+k) / self.ly(y) ) )
+                    if 17 < t + x + u and t + x + u < 130 else "")
+        self.output_axy.config(text = round(self.axy, r))  
+        
+        # Equation for axyn
+        self.axyn = 0
+        for k in range(0, n):
+            self.axyn += pow(v,k) * ( ( ( self.l(x+k) / self.l(x) ) * ( self.ly(y+k) / self.ly(y) ) )
+                    if 17 < t + x + u and t + x + u < 130 else "")
+        self.output_axyn.config(text = round(self.axyn, r))  
+
+        
+
 
 if __name__ == "__main__":
     app = App()
