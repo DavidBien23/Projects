@@ -493,9 +493,24 @@ class App(tk.Tk):
         self.output_tqxy.config(text = round((1 - self.tpx * self.tpy), r))
 
         # Equation for u|tqxy
-        self.utqx = ( ( (self.l(x+u) - self.l(x+u+t)) / self.l(x) )
-                    if 17 < t + x + u and t + x + u < 130 else "")
-        self.output_utqx.config(text = round(self.utqx, r))
+        self.utqxy = ( ( (self.l(x+u) - self.l(x+u+t)) * (self.ly(y+u) - self.ly(y+u+t)) / self.l(x) / self.ly(y) )
+                    if 17 < t + max(x, y) + u and t + max(x, y) + u < 130 else "")
+        self.output_utqxy.config(text = round(self.utqxy, r))
+
+        # Equation for exy
+        self.exy = 0
+        for k in range(0, 130-max(x, y)):
+            self.exy += k * ( ( (self.l(x+k) - self.l(x+k+1)) * (self.ly(y+k) - self.ly(y+k+1)) / self.l(x) / self.ly(y) )
+                    if 17 < t + max(x, y) + u and t + max(x, y) + u < 130 else "")
+        self.output_exy.config(text = round(self.exy, r))
+
+        # Equation for exyn
+
+        # Equation for Axy
+
+        # Equation for Axyn
+
+        # Equation for nExy
 
         # Equation for tpxybar
         self.output_tpxybar.config(text = round((self.tpx + self.tpy - (self.tpx * self.tpy)), r))
@@ -504,14 +519,14 @@ class App(tk.Tk):
         self.axy = 0
         for k in range(0, 130-max(x, y)):
             self.axy += pow(v,k) * ( ( ( self.l(x+k) / self.l(x) ) * ( self.ly(y+k) / self.ly(y) ) )
-                    if 17 < t + x + u and t + x + u < 130 else "")
+                    if 17 < t + max(x, y) + u and t + max(x, y) + u < 130 else "")
         self.output_axy.config(text = round(self.axy, r))  
         
         # Equation for axyn
         self.axyn = 0
         for k in range(0, n):
             self.axyn += pow(v,k) * ( ( ( self.l(x+k) / self.l(x) ) * ( self.ly(y+k) / self.ly(y) ) )
-                    if 17 < t + x + u and t + x + u < 130 else "")
+                    if 17 < t + max(x, y) + u and t + max(x, y) + u < 130 else "")
         self.output_axyn.config(text = round(self.axyn, r))  
 
         
