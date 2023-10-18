@@ -45,4 +45,3 @@ likely estimators and Neaman-Pearson which this document analyzes. Along with th
 write-up of the assignment with explaniations and graphs included. The goal of this assignment was 
 to find a significant test statistic and calculate the likelihood that the p value is significant. 
 To properly test our test statistic, we need many iterations of samples which requires heavy computation.</p>
-###
