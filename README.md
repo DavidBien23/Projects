@@ -37,3 +37,12 @@ model. The first half of the assignment was just manipulating parts of a linear 
 second was to create our own linear model. We were given data from Boston crime statistics 
 from the Intro to Stat Learning (ISLR2) library. We used forward selection and a transformation 
 of the dependent variable to grow our model to just 4 of the 12 variables.</p>
+
+### R-Assignment 5
+
+<p>For my Statistical Inference class, we learned in depth statistical analysis including most 
+likely estimators and Neaman-Pearson which this document analyzes. Along with the code is a formal
+write-up of the assignment with explaniations and graphs included. The goal of this assignment was 
+to find a significant test statistic and calculate the likelihood that the p value is significant. 
+To properly test our test statistic, we need many iterations of samples which requires heavy computation.</p>
+###
