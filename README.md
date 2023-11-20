@@ -21,6 +21,14 @@ the Fall of 2023 as I take the second portion of the class. My goal was to make 
 user friendly so I used the pythons built-in tkinter module for the first time. I also created 
 an executable file for the calculator with the same goal in mind.</p>
 
+### LC 15.4
+
+<p>During my last semester of college and in the second section of LVC's ALTAM preparation
+class, we were tasked to perform a Monte Carlo simulation of the NPV of an equity-linked
+insurance policy. I began by replicating previous table that established the policy reserves 
+and profit test. From that, I could calculate the NPV and simulate 1000 alternative scenarios.
+I enjoyed refreshing my memory of python code and challegning myself with a more efficient solution.</p>
+
 ### Mean
 
 <p>This is a small file that I worked on outside of school determined to find a unique way to 
@@ -38,13 +46,6 @@ second was to create our own linear model. We were given data from Boston crime 
 from the Intro to Stat Learning (ISLR2) library. We used forward selection and a transformation 
 of the dependent variable to grow our model to just 4 of the 12 variables.</p>
 
-### LC 15.4
-
-<p>During my last semester of college and in the second section of LVC's ALTAM preparation
-class, we were tasked to perform a Monte Carlo simulation of the NPV of an equity-linked
-insurance policy. I began by replicating previous table that established the policy reserves 
-and profit test. From that, I could calculate the NPV and simulate 1000 alternative scenarios.
-I enjoyed refreshing my memory of python code and challegning myself with a more efficient solution.</p>
 ### R-Assignment 5
 
 <p>For my Statistical Inference class, we learned in depth statistical analysis including most 
