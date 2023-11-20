@@ -25,8 +25,8 @@ an executable file for the calculator with the same goal in mind.</p>
 
 <p>During my last semester of college and in the second section of LVC's ALTAM preparation
 class, we were tasked to perform a Monte Carlo simulation of the NPV of an equity-linked
-insurance policy. I began by replicating previous table that established the policy reserves 
-and profit test. From that, I could calculate the NPV and simulate 1000 alternative scenarios.
+insurance policy with a GMMB. I began by replicating previous table that established the policy reserves 
+and profit vector. From that, I could calculate the NPV and simulate 1000 alternative scenarios.
 I enjoyed refreshing my memory of python code and challegning myself with a more efficient solution.</p>
 
 ### Mean
