@@ -29,6 +29,14 @@ insurance policy with a GMMB. I began by replicating previous table that establi
 and profit vector. From that, I could calculate the NPV and simulate 1000 alternative scenarios.
 I enjoyed refreshing my memory of python code and challegning myself with a more efficient solution.</p>
 
+### LC Review 3
+
+<p>This is an update to the "LC 15.4" code that created a Monte Carlo simulation of an equity-linked
+insurance policy. In my improvement, I made one instance of the simulation a function, called "monte_carlo(),
+that relied on variable like renewal expenses, interest rates, premium amount, and a GMMB function. Using
+the defined variabels, my function returns a NPV and GMMB (GMMB=0 if not applicable) as a tuple. Then, 
+the update made it easy to complete the assignment a of analyzing the effects of changing specific variables. </p>
+
 ### Mean
 
 <p>This is a small file that I worked on outside of school determined to find a unique way to 
