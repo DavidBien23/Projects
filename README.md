@@ -29,6 +29,13 @@ insurance policy with a GMMB. I began by replicating previous table that establi
 and profit vector. From that, I could calculate the NPV and simulate 1000 alternative scenarios.
 I enjoyed refreshing my memory of python code and challegning myself with a more efficient solution.</p>
 
+### LC Exam Final
+
+<p>This was my very last assigned group project for college and it was extensive. We look at a five-year
+equity linked policy with $1,000,000 premium and survival based on a custom Makeham's Law. We find 
+(a) The monthly risk premium with varying volitility, (b) the profit test of the policy, and the most 
+difficult, (c) hedging amount and cash flows. For the project, we used Excel for organization but I 
+independently reworked it as a python file to calculate the tedious NPV. I included our formal written document.</p>
 ### LC Review 3
 
 <p>This is an update to the "LC 15.4" code that created a Monte Carlo simulation of an equity-linked
