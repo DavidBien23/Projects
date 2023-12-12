@@ -16,10 +16,9 @@ on the number of claims in each category, amount per claim, and weight of exosur
 
 <p>In contrast to the previous project where I worked on the short term, this project 
 focused on the concepts of Long Term Actuarial Mathematics (LTAM). Ironically, the STAM 
-project took only a week while the LTAM took about a month and is still in progess as of 
-the Fall of 2023 as I take the second portion of the class. My goal was to make the calculator 
-user friendly so I used the pythons built-in tkinter module for the first time. I also created 
-an executable file for the calculator with the same goal in mind.</p>
+project took only a week while the LTAM took about a month. The project is not finished and 
+will not be as I have finished the class. The project taught me many things about python 
+and I applied those techniques to other projects.</p>
 
 ### LC 15.4
 
