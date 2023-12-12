@@ -12,7 +12,7 @@ def_m = .003
 def_r = .05
 def_sigma = .2
 def_x = 60
-def_St = .9995
+def_St = 1.0065
 disc = 1.1
 
 
@@ -45,7 +45,6 @@ def pi(time=0):
 
     return (pi_in, upsilon, psi)
 
-
 Ft = []
 MC = []
 expenses = []
@@ -61,15 +60,22 @@ for h in range(1,60):
     COH.append(round(def_P*(pi(time=h)[0]*Makeham(s=1/12, x=def_x+(h-1)/12) - pi(time=h-1)[1]*np.exp(def_r/12) - pi(time=h-1)[2]*def_St), 2))
     guarantee.append(round((1-Makeham(s=1/12, x=def_x+(h-1)/12))*max(0, def_P-Ft[h]), 2))
 
-Pr = []
+Πt = []
+NPV = []
 for j in range(0,60):
     profit = MC[j] - expenses[j] - guarantee[j] - COH[j]
+    capital_pi = profit
     if j > 1:
-        profit = profit*Makeham(s=1/12, x=def_x+(j-1)/12)*pow(disc, -j/12)
-    Pr.append(round(profit, 2))
+        profit = profit*Makeham(s=(j-1)/12, x=def_x)
+    if j > 0:
+        capital_pi = profit*pow(disc, -(j)/12)
+    Πt.append(round(profit, 2))
+    NPV.append(round(capital_pi, 2))
 
 Overall = pd.DataFrame({"Fund": Ft, "Manage Charges": MC, "Expenses": expenses, 
-                        "guarantee": guarantee, "Cost of Hedge": COH, "Profit": Pr})
+                        "guarantee": guarantee, "Cost of Hedge": COH, "Πt": Πt,
+                        "NPV": NPV,
+                        })
 print(Overall)
-print(f"The NPV of the Portfolios is {sum(Pr)}.")
+print(f"The NPV of the Portfolios is {round(sum(NPV), 2)}.")
 print(f"Completed in {round(time.time() - start, 2)} seconds.")
