@@ -35,6 +35,7 @@ equity linked policy with $1,000,000 premium and survival based on a custom Make
 (a) The monthly risk premium with varying volitility, (b) the profit test of the policy, and the most 
 difficult, (c) hedging amount and cash flows. For the project, we used Excel for organization but I 
 independently reworked it as a python file to calculate the tedious NPV. I included our formal written document.</p>
+
 ### LC Review 3
 
 <p>This is an update to the "LC 15.4" code that created a Monte Carlo simulation of an equity-linked
