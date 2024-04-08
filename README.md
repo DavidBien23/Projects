@@ -27,7 +27,7 @@ class, we were tasked to perform a Monte Carlo simulation of the NPV of an equit
 insurance policy with a Guaranteed Minimum Maturity Benefit (GMMB). I began by replicating 
 previous tables that established the policy reserves and profit vector. From that, I could calculate 
 the NPV and simulate 1000 alternative scenarios. I enjoyed refreshing my memory of python code and 
-challegning myself with a more efficient solution.</p>
+challegning myself to find a more efficient solution.</p>
 
 ### LC Exam Final
 
