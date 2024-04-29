@@ -41,7 +41,7 @@ independently reworked it as a python file to calculate the tedious NPV. I inclu
 
 <p>This is an update to the "LC 15.4" code that created a Monte Carlo simulation of an equity-linked
 insurance policy. In my improvement, I made one instance of the simulation a function, called "monte_carlo(),
-that relied on variable like renewal expenses, interest rates, premium amount, and a GMMB function. Using
+that relied on variables like renewal expenses, interest rates, premium amount, and a GMMB function. Using
 the defined variabels, my function returns a NPV and GMMB (GMMB=0 if not applicable) as a tuple. Then, 
 the update made it easy to complete the assignment a of analyzing the effects of changing specific variables. </p>
 
